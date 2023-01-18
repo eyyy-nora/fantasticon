@@ -1,10 +1,10 @@
 {
-  "name": "fantasticon",
-  "version": "0.0.0",
+  "name": "@eyyy-nora/fantasticon",
+  "version": "2.0.0",
   "description": "Icon font generation tool",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tancredi/fantasticon.git"
+    "url": "git+https://github.com/eyyy-nora/fantasticon.git"
   },
   "keywords": [
     "icons",
@@ -14,10 +14,14 @@
     "vector"
   ],
   "author": "Tancredi Trugenberger",
+  "authors": [
+    "Tancredi Trugenberger",
+    "Nora Reichwald <nora@reichwald.me>"
+  ],
   "bugs": {
-    "url": "https://github.com/tancredi/fantasticon/issues"
+    "url": "https://github.com/eyyy-nora/fantasticon/issues"
   },
-  "homepage": "https://github.com/tancredi/fantasticon#readme",
+  "homepage": "https://github.com/eyyy-nora/fantasticon#readme",
   "main": "lib/index.js",
   "bin": {
     "fantasticon": "bin/fantasticon"
@@ -41,7 +45,7 @@
     "change-case": "^4.1.2",
     "cli-color": "^2.0.2",
     "commander": "^9.4.1",
-    "glob": "^8.0.3",
+    "fast-glob": "^3.2.12",
     "handlebars": "^4.7.7",
     "slugify": "^1.6.5",
     "svg2ttf": "^6.0.3",
@@ -52,7 +56,6 @@
   },
   "devDependencies": {
     "@types/cli-color": "^2.0.0",
-    "@types/glob": "^8.0.0",
     "@types/jest": "^29.2.3",
     "@types/node": "^18.11.9",
     "@types/svg2ttf": "^5.0.1",
@@ -82,5 +85,8 @@
   },
   "engines": {
     "node": ">= 12.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

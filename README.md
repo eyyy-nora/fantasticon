@@ -1,3 +1,8 @@
+
+# Original by Tancredi Trugenberger, just replaces glob with fast-glob to make it work on windows machines
+#### [Original Repo](https://github.com/tancredi/fantasticon)
+
+
 ![Logo](https://fantasticon.s3.eu-west-2.amazonaws.com/readme/logo.png)
 
 <h2 align="center">Fantasticon</h2>

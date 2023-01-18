@@ -1,4 +1,4 @@
-import glob from 'glob';
+import glob from 'fast-glob';
 import { promisify } from 'util';
 import { resolve, relative, join } from 'path';
 import { removeExtension, splitSegments } from '../utils/path';
@@ -23,9 +23,7 @@ export interface AssetsMap {
 export const ASSETS_EXTENSION = 'svg';
 
 export const loadPaths = async (dir: string): Promise<string[]> => {
-  const globPath = join(dir, `**/*.${ASSETS_EXTENSION}`);
-
-  const files = await promisify(glob)(globPath, {});
+  const files = await glob(join(dir, `**/*.${ASSETS_EXTENSION}`))
 
   if (!files.length) {
     throw new Error(`No SVGs found in ${dir}`);
